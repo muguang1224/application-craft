@@ -1,5 +1,12 @@
 # application-craft
 
+<img src="assets/banner.svg" alt="application-craft — tailor job applications and academic submissions, honestly" width="880">
+
+[![tests](https://img.shields.io/badge/tests-13%20passing-brightgreen)](#tests)
+[![python](https://img.shields.io/badge/python-3.8%2B-blue)](#)
+[![dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)](#)
+[![license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 **An Agent Skill for application materials that stay honest — job applications and academic submissions.**
 
 Two workflows in one package: tailor a resume and write a cover letter for a specific job, and get a manuscript into a target journal's required shape with a proper cover letter to the editor. It sharpens and formats what's *true* — it will not invent credentials, and it will not reword a manuscript to dodge a similarity/plagiarism check.
@@ -16,6 +23,8 @@ Standard library only. No install. Reads plain-text resume and job description.
 
 The report gives you the JD's key terms, which are in the resume, which aren't, and structure red flags (missing contact line, missing sections, length, bullets that don't start with a strong verb).
 
+<img src="assets/demo.svg" alt="application-craft terminal demo — resume vs job description coverage report" width="820">
+
 ## What's inside
 
 ```
@@ -26,7 +35,18 @@ templates/research-cover-letter.md       # editor cover letter structure
 references/job-application-playbook.md   # honest-tailoring rules
 references/journal-submission-checklist.md
 examples/                                # sample resume + JD to try it on
+assets/                                  # banner + demo (SVG)
+tests/test_ats_check.py                  # unittest suite
 ```
+
+## Tests
+
+```bash
+python3 -m unittest discover -s tests      # zero-dependency
+# or:  pytest tests/
+```
+
+13 tests covering keyword/bigram extraction, singular↔plural matching, the matched/missing partition, structure checks, and bullet-verb detection.
 
 ## Hard limits
 

@@ -50,7 +50,12 @@ def singular(w: str) -> str:
 
 def tokens(text: str) -> list[str]:
     words = re.findall(r"[a-zA-Z][a-zA-Z0-9+#.\-]*", text.lower())
-    return [w for w in words if len(w) > 2 and not w.isdigit()]
+    cleaned = []
+    for w in words:
+        w = w.strip(".-")          # drop sentence punctuation glued to the word
+        if len(w) > 2 and not w.isdigit():
+            cleaned.append(w)
+    return cleaned
 
 
 def extract_keywords(jd: str, top: int = 30) -> list[tuple[str, int]]:
