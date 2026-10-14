@@ -1,0 +1,22 @@
+Senior Backend Engineer — payments platform
+
+We are hiring a senior backend engineer to own the payments platform. You will
+design and scale distributed services, work closely with product, and improve
+reliability and observability.
+
+Responsibilities
+- Design, build, and scale distributed backend services handling high throughput
+- Own reliability, latency, and observability of payment flows
+- Drive technical design reviews and mentor engineers
+
+Requirements
+- 5+ years backend engineering experience
+- Strong Python or Go
+- Experience with distributed systems, PostgreSQL, and caching
+- Experience with Kubernetes and cloud infrastructure
+- Excellent communication and mentoring skills
+
+Nice to have
+- Experience with payments or fintech
+- Experience with event streaming (Kafka)
+- Experience with observability tooling (Prometheus, Grafana)

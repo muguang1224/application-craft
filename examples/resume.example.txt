@@ -1,0 +1,18 @@
+Jane Doe
+jane@example.com · +1 555 010 0000 · github.com/janedoe
+
+EXPERIENCE
+- Backend engineer, Acme Corp (2022–present)
+- Built and scaled the payments API, cutting p99 latency 40% via caching and indexing
+- Led migration from a monolith to services, reducing deploy time from 40m to 5m
+- Designed the multi-tenant data model used by all customer-facing services
+
+- Software engineer, Beta Labs (2020–2022)
+- Implemented the event ingestion pipeline handling 50k events/sec
+- Wrote the internal Python SDK adopted by five teams
+
+EDUCATION
+BSc Computer Science, State University (2020)
+
+SKILLS
+Python, Go, PostgreSQL, Redis, Docker, Kubernetes, distributed systems, REST APIs
